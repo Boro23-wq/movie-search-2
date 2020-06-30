@@ -8,7 +8,7 @@ class MoviesList extends React.Component {
     event.preventDefault();
     axios
       .get(
-        `https://www.omdbapi.com/?apikey=756abb2f&s=${this.state.searchTerm}&plot=full`
+        `https://www.omdbapi.com/?apikey=<your_api_key>&s=${this.state.searchTerm}&plot=full`
       )
       .then((res) => res.data)
       .then((res) => {
